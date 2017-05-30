@@ -6,6 +6,8 @@ class Mapa {
      double latitude
      double longitude
      int indice
+     
+     
 
     static constraints = {
       nome()

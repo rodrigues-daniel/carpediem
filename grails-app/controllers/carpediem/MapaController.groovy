@@ -5,17 +5,22 @@ import grails.transaction.Transactional
 
 @Transactional(readOnly = true)
 class MapaController {
-
+     
+  
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
-    def marcadores(){
+    def marcador(){
 
-      render view: 'marcadores'
+     [status:'fsfsf'] 
+      
 
     }
-
+ 
+    
+ 
 
     def index(Integer max) {
+       
         params.max = Math.min(max ?: 10, 100)
         respond Mapa.list(params), model:[mapaCount: Mapa.count()]
     }

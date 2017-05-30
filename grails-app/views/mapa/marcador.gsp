@@ -7,15 +7,21 @@
   <title>Bem Vindo ao Vue</title>
  <asset:stylesheet href="style.css" />
  
+ 
    
 </head>
 <body>
  <div id="vue-map">    
 </div> 
+
  
  <div id="map">
 
  </div>
+ <div>
+  >> ${status}
+ </div>
+  
 
 
 <asset:javascript src="vue.js" />
